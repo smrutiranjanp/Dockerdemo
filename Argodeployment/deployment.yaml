@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tempservice
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: tempservice
+  template:
+    metadata:
+      labels:
+        app: tempservice
+    spec:
+      containers:
+      - image: tanzucodedept.azurecr.io/samples/tempservice:latest
+        name: tempservice
+        ports:
+        - containerPort: 80
