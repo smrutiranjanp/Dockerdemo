@@ -17,4 +17,4 @@ spec:
       - image: tanzucodedept.azurecr.io/samples/tempservice:latest
         name: tempservice
         ports:
-        - containerPort: 80
+        - containerPort: 8000
