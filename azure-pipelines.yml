@@ -15,7 +15,7 @@ jobs:
   steps:
   - task: ManualValidation@0
     inputs:
-      notifyUsers: 'happyparida@hotmail.com'
+      notifyUsers: 'happy.synergy@yahoo.com'
       instructions: 'continue?'
 
 - job: job2
