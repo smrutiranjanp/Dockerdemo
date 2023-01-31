@@ -16,7 +16,7 @@ jobs:
   - task: ManualValidation@0
     inputs:
       notifyUsers: 'happy.synergy@yahoo.com'
-      instructions: 'continue?'
+      instructions: 'Please validate the build configuration and resume'
 
 - job: job2
   dependsOn: job1
